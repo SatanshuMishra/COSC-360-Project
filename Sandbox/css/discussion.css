@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.discussion {
+  width: 60%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #080808;
+  color: #fff;
+  padding: 2%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.discussion-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.discussion-options div {
+  margin-right: 5px;
+}
+
+.discussion-options i {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 3px;
+  padding: 8px;
+  border-radius: 100%;
+  transition-property: color, background-color;
+  transition-delay: 100ms;
+  background-color: transparent;
+}
+
+.discussion-options span {
+  transition-property: color;
+  transition-delay: 100ms;
+  background-color: transparent;
+}
+
+.popularity:hover {
+  cursor: pointer;
+}
+
+.comments:hover {
+  cursor: pointer;
+}
+
+.popularity:hover > i {
+  color: #fa187f;
+  background-color: #210c14;
+  cursor: pointer;
+}
+
+.popularity:hover > span {
+  color: #fa187f;
+}
+
+.report:hover {
+  cursor: pointer;
+}
+
+.report:hover > i {
+  color: #02b97c;
+  background-color: #0c1b14;
+}
+
+.report:hover > span {
+  color: #02b97c;
+}
+
+.comments:hover > i {
+  color: #1c9cef;
+  background-color: #0c1720;
+}
+
+.comments:hover > span {
+  color: #1c9cef;
+}
+
+.discussion-options span {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 15px;
+}
