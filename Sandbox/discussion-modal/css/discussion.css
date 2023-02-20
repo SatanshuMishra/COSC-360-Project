@@ -4,25 +4,78 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background-color: #000000;
+}
+
 .discussion {
-  width: 60%;
+  width: 30%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   background-color: #080808;
   color: #fff;
-  padding: 2%;
-  border-radius: 5px;
+  padding: 1.5em;
+  border-radius: 10px;
+  border: 1px solid #2f3336;
   font-size: 16px;
+}
+
+.discussion-headers {
+  display: flex;
+  margin: -1em -1em;
+}
+
+.identity {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: lightgray;
+  font-weight: 600;
+  /* padding: 8px; */
+}
+
+.identity i {
+  margin-right: 3px;
+}
+
+.more-options {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: lightgray;
+  font-weight: 400;
+}
+
+.more-options i {
+  padding: 8px;
+  border-radius: 100%;
+}
+
+.more-options:hover > i {
+  color: #1c9cef;
+  background-color: #0c1720;
+  cursor: pointer;
+}
+
+.content {
+  line-height: 20px;
+  font-size: 0.95rem;
 }
 
 .discussion-options {
   display: flex;
   flex-wrap: wrap;
+  margin: -0.2em 0em -0.6em 0;
 }
 
 .discussion-options div {
   margin-right: 5px;
+  font-size: 0.875rem;
+}
+
+.discussion-options i,
+.discussion-options span {
+  font-size: 0.875rem;
+  color: lightgray;
 }
 
 .discussion-options i {
@@ -40,6 +93,7 @@
   transition-property: color;
   transition-delay: 100ms;
   background-color: transparent;
+  font-weight: 400;
 }
 
 .popularity:hover {
