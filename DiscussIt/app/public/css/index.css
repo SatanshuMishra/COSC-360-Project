@@ -33,9 +33,15 @@ body {
   background-color: #0f0f0f;
   caret-color: #fff;
   color: #fff;
+  font-size: 14px;
+}
+
+.nav-search::placeholder {
+  font-size: 14px;
 }
 
 .log-in {
+  display: block;
   height: 100%;
   border-radius: 20px;
   padding: 0 1em;
@@ -66,6 +72,25 @@ body {
 }
 
 .dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contentb {
+  display: none;
+  position: absolute;
+  background-color: #0f0f0f;
+  min-width: 160px;
+  overflow: auto;
+  margin-top: 8px;
+  right: 5%;
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-contentb a {
   color: #fff;
   padding: 12px 16px;
   text-decoration: none;
@@ -211,10 +236,18 @@ body {
   padding: 0.8em;
 }
 
+.discussion > .info > .topics {
+  display: flex;
+  justify-content: end;
+}
+
 .discussion > .info > .topics > .pill {
+  margin: 0 0 0 0.3em;
   padding: 0.5em 0.8em;
   /* border: 1px solid #fff; */
-  border-radius: 50px;
+  border-radius: 30px;
+  height: fit-content;
+  vertical-align: middle;
 }
 
 .news {
@@ -269,6 +302,7 @@ body {
 
 .discussion > .footer > .comments > span {
   font-size: 16px;
+  margin-right: 1em;
 }
 
 .discussion > .footer > .comments:hover {
@@ -276,14 +310,56 @@ body {
 }
 
 .discussion > .footer > .comments:hover > i {
+  color: #1c9cef;
+  background-color: #0c1720;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.discussion > .footer > .comments:hover > span {
+  color: #1c9cef;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.discussion > .footer > .popularity {
+  display: inline;
+  flex-wrap: wrap;
+}
+
+.discussion > .footer > .popularity > i {
+  font-size: 20px;
+  margin-right: 3px;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.discussion > .footer > .popularity > span {
+  font-size: 16px;
+}
+
+.discussion > .footer > .popularity:hover {
+  cursor: pointer;
+}
+
+.discussion > .footer > .popularity:hover > i {
   color: #fa187f;
   background-color: #210c14;
   cursor: pointer;
   border-radius: 50px;
 }
 
-.discussion > .footer > .comments:hover > span {
+.discussion > .footer > .popularity:hover > span {
   color: #fa187f;
   cursor: pointer;
   border-radius: 50px;
+}
+
+particle {
+  border-radius: 50%;
+  left: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  opacity: 0;
 }
