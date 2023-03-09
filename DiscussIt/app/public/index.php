@@ -33,7 +33,7 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     </div>
   </nav>
 
-  <div>
+  <div class="topics-container">
     <div class="topic-slider">
       <div class="slider">
         <a class="slider-item" href="#">
@@ -106,10 +106,15 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     <div class="slider-controls">
         <button class="slider-control-btn" id="moveSliderLeftBtn"><i class="fa-solid fa-left-long"></i></button>
         <button class="slider-control-btn" id="moveSliderRightBtn"><i class="fa-solid fa-right-long"></i></button>
-    </div>
+  </div>
   </div>
   <div class="">
-    <div class="options-bar"></div>
+    <div class="options-bar-horizontal">
+      
+    </div>
+    <div class="options-bar-vertical">
+      <button class="start-discussion">Start Discussion</button>
+    </div>
     <div class="feed">
       <div class="discussion">
         <div class="header">
