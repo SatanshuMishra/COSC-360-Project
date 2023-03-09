@@ -32,6 +32,7 @@
       </div>
     </div>
   </nav>
+  <a href = "discussion.php"><button>Create Discussion</button></a>
 
 
 

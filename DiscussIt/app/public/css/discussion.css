@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+body{
+    background-color: #000;
+}
+
+.logo {
+    width: 2.5rem;
+  }
+
+.log-in {
+    height: 100%;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    background-color: #7aef06;
+    /* #067aef */
+    /* #FD5F01 */
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    border: none;
+  }
+  
+.dropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0f0f0f;
+    min-width: 160px;
+    overflow: auto;
+    margin-top: 8px;
+    right: 5%;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background-color: #d7dadc;
+    color: #000;
+  }
+  
+  .show {
+    display: block;
+  }
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(44, 209, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 1em;
+    margin-top: 0.5em;
+  }
+  .circle2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(133, 133, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    margin-left: 6em;
+    margin-top: 0.5em;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+ }
+ .scroll-bar {
+    overflow-x: auto;
+    white-space: nowrap;
+  
+ }
+ .topic {
+    display: inline-block;
+    padding: 2em;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5em;
+ }
+ .topic:hover {
+    background-color: lightgray;
+ }
+ .text-box {
+    margin-top: 2em;
+    padding: 1em;
+    border: 1px solid white;
+ }
+.remove {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
