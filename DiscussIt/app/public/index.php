@@ -35,67 +35,67 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     <div class="topic-slider">
       <div class="slider">
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container space">
             <span>SPACE</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container qna">
             <span>Q&A</span>
           </div>
         </a>
         <a class="slider-item">
-          <div class="item-container">
-            <span>GAMEING</span>
+          <div class="item-container gaming">
+            <span>GAMING</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container cooking">
             <span>COOKING</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container sports">
             <span>SPORTS</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
-            <span>TOPIC</span>
+          <div class="item-container positivity">
+            <span>POSITIVITY</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container news">
             <span>NEWS</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container space">
             <span>SPACE</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container qna">
             <span>Q&A</span>
           </div>
         </a>
         <a class="slider-item">
-          <div class="item-container">
-            <span>GAMEING</span>
+          <div class="item-container gaming">
+            <span>GAMING</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container cooking">
             <span>COOKING</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container sports">
             <span>SPORTS</span>
           </div>
         </a>
         <a class="slider-item" href="#">
-          <div class="item-container">
+          <div class="item-container news">
             <span>NEWS</span>
           </div>
         </a>
@@ -107,26 +107,25 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     </div>
   </div>
   <div class="">
-    <!-- <div class="options-bar"></div> -->
+    <div class="options-bar"></div>
     <div class="feed">
       <div class="discussion">
         <div class="header">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <div class="replies">
-            <i class="fa-solid fa-ellipsis"></i>
-          </div>
+          <h1>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+          <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
         </div>
         <div class="info">
-          <div>
-            <img src="" alt="">
-            <div class="user-info">
+          <div class="user-info">
+            <!-- <img src="" alt=""> -->
+            <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
+            <div class="details">
               <p class="name">Satanshu Mishra</p>
               <p class="date">15h ago</p>
             </div>
           </div>
           <div class="topics">
-            <div class="pill topic">
-              <span class="name">Topic</span>
+            <div class="pill space">
+              <span class="name">Space</span>
             </div>
           </div>
         </div>
@@ -134,8 +133,8 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
           <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
         </div>
         <div class="footer">
-          <div class="replies">
-            <i class="fa-regular fa-message"></i>
+          <div class="comments">
+            <i class="fa-regular fa-comment-dots"></i>
             <span class="number">90</span>
           </div>
         </div>
