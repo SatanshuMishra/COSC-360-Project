@@ -21,11 +21,13 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
       <input type="text" class="nav-search" placeholder="Search">
     </form>
     <div class="dropdown">
-      <button onclick="myFunction()" class="log-in">
+      <button class="log-in">
         <i class="fa-regular fa-user"></i> &nbsp;<i class="fa-solid fa-angle-down"></i>
       </button>
       <div id="myDropdown" class="dropdown-content">
         <a href="#"><i class="fa-solid fa-circle-info"></i> &nbsp;Terms & Policies</a>
+        <!-- DISPLAY WHEN LOGGED IN -->
+        <!-- <a href="#"><i class="fa-solid fa-gear"></i> &nbsp;Settings</a> -->
         <a href="#"><i class="fa-regular fa-circle-question"></i> &nbsp;Log In / Sign Up</a>
       </div>
     </div>
@@ -127,6 +129,9 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
             <div class="pill space">
               <span class="name">Space</span>
             </div>
+            <div class="pill qna">
+              <span class="name">Q&A</span>
+            </div>
           </div>
         </div>
         <div class="body">
@@ -135,6 +140,10 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
         <div class="footer">
           <div class="comments">
             <i class="fa-regular fa-comment-dots"></i>
+            <span class="number">90</span>
+          </div>
+          <div class="popularity">
+            <i class="fa-regular fa-heart"></i>
             <span class="number">90</span>
           </div>
         </div>
