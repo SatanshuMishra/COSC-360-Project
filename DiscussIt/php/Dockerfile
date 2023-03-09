@@ -6,3 +6,5 @@ RUN set -ex \
 
 RUN docker-php-ext-install pdo pdo_pgsql
 RUN docker-php-ext-install pdo pgsql
+
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
