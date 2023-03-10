@@ -15,23 +15,8 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
   <title>Home of Discussions</title>
 </head>
 <body>
-  <nav class="nav-bar">
-    <img class="logo" src="images/logoDarkBlue.png" alt="img">
-    <form>
-      <input type="text" class="nav-search" placeholder="Search">
-    </form>
-    <div class="dropdown">
-      <button class="log-in">
-        <i class="fa-regular fa-user"></i> &nbsp;<i class="fa-solid fa-angle-down"></i>
-      </button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="#"><i class="fa-solid fa-circle-info"></i> &nbsp;Terms & Policies</a>
-        <!-- DISPLAY WHEN LOGGED IN -->
-        <!-- <a href="#"><i class="fa-solid fa-gear"></i> &nbsp;Settings</a> -->
-        <a href="#"><i class="fa-regular fa-circle-question"></i> &nbsp;Log In / Sign Up</a>
-      </div>
-    </div>
-  </nav>
+
+  <?php include 'components/navigation-bar.php'; ?>
 
   <div class="topics-container">
     <div class="topic-slider">
