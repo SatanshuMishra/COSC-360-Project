@@ -106,16 +106,75 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     <div class="slider-controls">
         <button class="slider-control-btn" id="moveSliderLeftBtn"><i class="fa-solid fa-left-long"></i></button>
         <button class="slider-control-btn" id="moveSliderRightBtn"><i class="fa-solid fa-right-long"></i></button>
+    </div>
   </div>
-  </div>
-  <div class="">
-    <div class="options-bar-horizontal">
-      
+  <div class="dashboard">
+    <div class="options-container">
+      <div class="options-bar-horizontal fixed">
+        <button class="start-discussion">Start Discussion</button>
+        <div class="filter-options">
+          <div class="top">
+            <i class="fa-solid fa-ranking-star"></i>
+            <span>Top</span>
+          </div>
+          <div class="new">
+            <i class="fa-solid fa-hourglass-start"></i>
+            <span>New</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="options-bar-vertical">
       <button class="start-discussion">Start Discussion</button>
+      <div class="filter-options">
+        <div class="top">
+          <i class="fa-solid fa-ranking-star"></i>
+          <span>Most Popular</span>
+        </div>
+        <div class="new">
+          <i class="fa-solid fa-hourglass-start"></i>
+          <span>Most Recent</span>
+        </div>
+      </div>
     </div>
     <div class="feed">
+      <div class="discussion">
+        <div class="header">
+          <h1>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
+          <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
+        </div>
+        <div class="info">
+          <div class="user-info">
+            <!-- <img src="" alt=""> -->
+            <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
+            <div class="details">
+              <p class="name">Satanshu Mishra</p>
+              <p class="date">15h ago</p>
+            </div>
+          </div>
+          <div class="topics">
+            <div class="pill space">
+              <span class="name">Space</span>
+            </div>
+            <div class="pill qna">
+              <span class="name">Q&A</span>
+            </div>
+          </div>
+        </div>
+        <div class="body">
+          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
+        </div>
+        <div class="footer">
+          <div class="comments">
+            <i class="fa-regular fa-comment-dots"></i>
+            <span class="number">90</span>
+          </div>
+          <div class="popularity">
+            <i class="fa-regular fa-heart"></i>
+            <span class="number">90</span>
+          </div>
+        </div>
+      </div>
       <div class="discussion">
         <div class="header">
           <h1>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
