@@ -186,17 +186,186 @@ body {
   cursor: pointer;
 }
 
+.dashboard {
+  display: flex;
+  /* justify-content: space-evenly; */
+  /* border: 1px solid #fff; */
+}
+
+.options-bar-vertical {
+  margin: 1em 0 1em 1em;
+  width: 30%;
+  /* border: 1px solid #fff; */
+  background-color: #020202;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1.5em;
+  position: static;
+}
+
+.options-bar-vertical > .start-discussion {
+  width: 100%;
+  padding: 1em;
+  background-color: #0077ff;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-color: transparent;
+  /* color: #0f0f0f; */
+}
+
+.options-bar-vertical > .start-discussion:hover {
+  background-color: #0060ce;
+}
+
+.options-bar-horizontal {
+  display: none;
+  position: static;
+  margin: 1em 1em 0 1em;
+  width: 100%;
+  /* border: 1px solid #fff; */
+  background-color: #020202;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1.5em;
+  /* margin-left: auto;
+  margin-right: 0; */
+}
+
+.options-bar-horizontal > .start-discussion {
+  width: fit-content;
+  padding: 1em;
+  background-color: #0077ff;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+.options-bar-horizontal > .start-discussion:hover {
+  background-color: #0060ce;
+}
+
+.options-bar-horizontal > .filter-options {
+  display: flex;
+  height: 100%;
+}
+
+.options-bar-horizontal > .filter-options .top {
+  font-size: 16px;
+  margin: 1em;
+  height: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.options-bar-horizontal > .filter-options > .top > i {
+  margin-right: 0.5em;
+}
+
+.options-bar-horizontal > .filter-options > .new {
+  font-size: 16px;
+  margin: 1em;
+  height: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.options-bar-horizontal > .filter-options > .new > i {
+  margin-right: 0.5em;
+}
+
+.options-bar-horizontal > .filter-options .top:hover {
+  color: #1783ff;
+}
+
+.options-bar-horizontal > .filter-options .new:hover {
+  color: #1783ff;
+}
+
+.options-bar-vertical > .filter-options .top {
+  font-size: 16px;
+  margin: 2em 1em;
+  height: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1em 1em 0 1em;
+}
+
+.options-bar-vertical > .filter-options > .top > i {
+  margin-right: 0.5em;
+}
+
+.options-bar-vertical > .filter-options > .new {
+  font-size: 16px;
+  margin: 2em 1em;
+  height: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0 1em 1em 1em;
+}
+
+.options-bar-vertical > .filter-options > .new > i {
+  margin-right: 0.5em;
+}
+
+.options-bar-vertical > .filter-options .top:hover {
+  color: #1783ff;
+}
+
+.options-bar-vertical > .filter-options .new:hover {
+  color: #1783ff;
+}
+
+.fixed > .start-discussion:hover {
+  background-color: #00234b;
+}
+
+.fixed > .filter-options .top:hover {
+  color: #d0d0d0;
+}
+
+.fixed > .filter-options .new:hover {
+  color: #d0d0d0;
+}
+
+@media (max-width: 1050px) {
+  .options-bar-vertical {
+    display: none;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .options-bar-horizontal {
+    display: flex;
+    justify-content: space-between;
+  }
+  .options-container {
+    display: flex;
+    justify-content: end;
+  }
+}
+
 .feed {
   margin: 1em;
+  width: fit-content;
 }
 
 .discussion {
-  width: 50%;
+  width: 100%;
   /* border: 0.1px solid #ffffff; */
   background-color: #020202;
   border-radius: 10px;
   color: #fff;
   padding: 2em;
+  margin: 0em 0 1em 0;
 }
 
 .discussion > .header {
@@ -362,7 +531,4 @@ particle {
   position: fixed;
   top: 0;
   opacity: 0;
-}
-
-.options-bar-vertical {
 }
