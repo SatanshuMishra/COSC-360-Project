@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +13,13 @@
   <script src="https://kit.fontawesome.com/ec7e0e3eb8.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js"
 integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-  <script src="js/index.js"></script>
   <title>Home of Discussions</title>
 </head>
 <body>
 
-  <?php include 'components/navigation-bar.php'; ?>
+<script src="js/index.js"></script>
+
+  <?php include_once 'components/navigation-bar.php'; ?>
 
   <div class="topics-container">
     <div class="topic-slider">

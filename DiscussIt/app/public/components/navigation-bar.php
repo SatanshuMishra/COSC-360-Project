@@ -20,13 +20,26 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     </form>
     <div class="dropdown">
       <button class="log-in">
-        <i class="fa-regular fa-user"></i> &nbsp;<i class="fa-solid fa-angle-down"></i>
+        <?php
+          if(isset($_SESSION["uid"])){
+            echo $_SESSION["uname"] , '&nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i>';
+          }
+          else {
+            echo '<i class="fa-regular fa-user"></i> &nbsp;<i class="fa-solid fa-angle-down"></i>';
+          }
+        ?>
+        <!-- <i class="fa-regular fa-user"></i> &nbsp;<i class="fa-solid fa-angle-down"></i> -->
       </button>
       <div id="myDropdown" class="dropdown-content">
         <a href="#"><i class="fa-solid fa-circle-info"></i> &nbsp;Terms & Policies</a>
-        <!-- DISPLAY WHEN LOGGED IN -->
-        <!-- <a href="#"><i class="fa-solid fa-gear"></i> &nbsp;Settings</a> -->
-        <a href="../login.php"><i class="fa-regular fa-circle-question"></i> &nbsp;Log In / Sign Up</a>
+        <?php
+          if(isset($_SESSION["uid"])){
+            echo '<a href="#"><i class="fa-solid fa-gear"></i> &nbsp;Settings</a>';
+            echo '<a href="../scripts/logout-script.php"><i class="fa-regular fa-circle-question"></i> &nbsp;Log Out</a>';
+          } else{
+            echo '<a href="../login.php"><i class="fa-regular fa-circle-question"></i> &nbsp;Log In / Sign Up</a>';
+          }
+        ?> 
       </div>
     </div>
   </nav>

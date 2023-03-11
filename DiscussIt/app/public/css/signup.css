@@ -12,7 +12,7 @@ body {
 
 .container {
   width: inherit;
-  height: 88vh;
+  /* height: 88vh; */
   margin: 1em;
   border-radius: 10px;
   display: flex;
@@ -117,6 +117,29 @@ body {
   border-radius: 10px;
   color: #fff;
 }
+
+.passwordCont {
+  display: flex;
+  justify-content: start;
+  /* padding: 0.5em;
+  margin: 0.5em 0.8em; */
+}
+
+.passwordCont > i {
+  vertical-align: middle;
+  margin: 1em 0;
+  padding: 1em;
+  margin-left: -60px;
+}
+
+.passwordCont > i:hover {
+  cursor: pointer;
+}
+
+/* .showPasswordCont > label {
+  font-size: 16px;
+  padding: 0 0.5em;
+} */
 
 #signupForm > .terms-checkbox {
   display: flex;

@@ -12,7 +12,7 @@ body {
 
 .container {
   width: inherit;
-  height: 88vh;
+  /* height: 88vh; */
   margin: 1em;
   border-radius: 10px;
   display: flex;
@@ -86,7 +86,7 @@ body {
 }
 
 #loginForm > .buttons-container > button,
-#loginForm > .buttons-container > a > button {
+#loginForm > .buttons-container > .sign-up-btn-div > a > button {
   width: fit-content;
   padding: 0.8em;
   background-color: #0077ff;
@@ -99,7 +99,48 @@ body {
 }
 
 #loginForm > .buttons-container > button:hover,
-#loginForm > .buttons-container > a > button:hover {
+#loginForm > .buttons-container > .sign-up-btn-div > a > button:hover {
+  background-color: #0060ce;
+}
+
+#loginForm > .buttons-container {
+  padding: 2em 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#loginForm > .buttons-container > .sign-up-btn-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#loginForm > .buttons-container > .sign-up-btn-div > a {
+  display: flex;
+  justify-content: start;
+  text-decoration: none;
+}
+
+#loginForm > .buttons-container > .sign-up-btn-div > a > button,
+#loginForm > .buttons-container > button {
+  margin-top: 2.2em;
+  width: fit-content;
+  padding: 0.8em;
+  background-color: #0077ff;
+  color: #fff;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+#loginForm > .buttons-container > .sign-up-btn-div > a > button {
+  margin-top: 1em;
+}
+
+#loginForm > .buttons-container > .sign-up-btn-div > a > button:hover,
+#loginForm > .buttons-container > button:hover {
   background-color: #0060ce;
 }
 
