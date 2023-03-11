@@ -1,3 +1,5 @@
+<?php session_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +17,9 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
   <title>Sign Up</title>
 </head>
 <body>
-  <?php include 'components/navigation-bar.php'; ?>
+
+  <?php include_once 'components/navigation-bar-no-search.php'; ?>
+
   <div class="container">
     <div class="image-container">
       <h1>Welcome to the <br> Home of Discussions</h1>
@@ -23,17 +27,24 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
     </div>
     <div class="form-container">
       <h1>Sign Up</h1>
-      <form id="signupForm" action="#" method="post">
+      <form id="signupForm" action="scripts/signup-script.php" method="post">
         <label id="firstNameLabel" for="firstName">First Name</label><br>
-        <input type="text" name="" id="firstName"><br>
+        <input type="text" name="firstName" id="firstName"><br>
         <label id="lastNameLabel" for="lastName">Last Name</label><br>
-        <input type="text" name="" id="lastName">
+        <input type="text" name="lastName" id="lastName">
         <label id="usernameLabel" for="username">Username*</label><br>
-        <input type="text" name="" id="username" required><br>
+        <input type="text" name="username" id="username" required oninvalid="this.setCustomValidity('Please enter a username.')"
+       oninput="setCustomValidity('')"><br>
         <label id="passLabel" for="password">Password*</label><br>
-        <input type="text" name="" id="password" required><br>
+        <div class="passwordCont">
+          <input type="password" name="password" id="password" required oninvalid="this.setCustomValidity('Please enter a password.')"
+        oninput="setCustomValidity('')"><br>
+          <i id="showPasswordIcon" class="fa-regular fa-eye"></i>
+        </div>
+
         <div class="terms-checkbox">
-          <input type="checkbox" name="agreeToTerms" id="agreeToTerms">
+          <input type="checkbox" name="agreeToTerms" id="agreeToTerms" required oninvalid="this.setCustomValidity('You must agree to our terms & conditions to proceed.')"
+       oninput="setCustomValidity('')">
           <label id="termsLabel" for="username"><a href="#">Agree to Terms and Conditons</a>&nbsp;<sup><i class="fa-solid fa-arrow-up-right-from-square"></i> </sup></label>
         </div>
         
@@ -46,7 +57,7 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
               </button>
             </a>
           </div>
-            <button type="submit">
+            <button type="submit" name="submit">
               Sign Up
             </button>
         </div>
