@@ -5,6 +5,11 @@
   /* box-sizing: border-box; */
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: #0f0f0f;
   font-size: 14px;
@@ -39,6 +44,16 @@ body {
   padding: 5em;
   color: #fff;
   border-radius: 0 20px 20px 0;
+}
+
+@media (max-width: 1050px) {
+  .container > .image-container {
+    display: none;
+  }
+
+  .container > .form-container {
+    border-radius: 20px;
+  }
 }
 
 .container > .image-container > h1 {

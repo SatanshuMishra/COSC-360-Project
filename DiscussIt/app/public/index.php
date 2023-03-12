@@ -19,7 +19,7 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
 
 <script src="js/index.js"></script>
 
-  <?php include_once 'components/navigation-bar.php'; ?>
+  <?php include_once 'components/navigation-bar-v2.php'; ?>
 
   <div class="topics-container">
     <div class="topic-slider">
@@ -96,109 +96,371 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
         <button class="slider-control-btn" id="moveSliderRightBtn"><i class="fa-solid fa-right-long"></i></button>
     </div>
   </div>
-  <div class="dashboard">
-    <div class="options-container">
-      <div class="options-bar-horizontal fixed">
-        <button class="start-discussion">Start Discussion</button>
-        <div class="filter-options">
-          <div class="top">
-            <i class="fa-solid fa-ranking-star"></i>
-            <span>Top</span>
-          </div>
-          <div class="new">
-            <i class="fa-solid fa-hourglass-start"></i>
-            <span>New</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="options-bar-vertical">
-      <button class="start-discussion">Start Discussion</button>
-      <div class="filter-options">
-        <div class="top">
-          <i class="fa-solid fa-ranking-star"></i>
-          <span>Most Popular</span>
-        </div>
-        <div class="new">
-          <i class="fa-solid fa-hourglass-start"></i>
-          <span>Most Recent</span>
-        </div>
-      </div>
-    </div>
+  <div class="page-body">
+    <!-- OPTIONS -->
     <div class="feed">
-      <div class="discussion">
-        <div class="header">
-          <h1>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-          <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
-        </div>
-        <div class="info">
-          <div class="user-info">
-            <!-- <img src="" alt=""> -->
-            <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
-            <div class="details">
-              <p class="name">Satanshu Mishra</p>
-              <p class="date">15h ago</p>
+      <div class="feed-header">
+        <h1>Discussions & Articles</h1>
+        <button class="start-discussion-btn">Start Discussion</button>
+      </div>
+      <div class="feed-body">
+        <div class="discussion">
+          <div class="header">
+            <h1>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
+            <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
+          </div>
+          <div class="info">
+            <div class="user-info">
+              <!-- <img src="" alt=""> -->
+              <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
+              <div class="details">
+                <p class="name">Satanshu Mishra</p>
+                <p class="date">15h ago</p>
+              </div>
+            </div>
+            <div class="topics">
+              <div class="pill space">
+                <span class="name">Space</span>
+              </div>
+              <div class="pill qna">
+                <span class="name">Q&A</span>
+              </div>
             </div>
           </div>
-          <div class="topics">
-            <div class="pill space">
-              <span class="name">Space</span>
+          <div class="body">
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
+          </div>
+          <div class="footer">
+            <div class="comments">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span class="number">90</span>
             </div>
-            <div class="pill qna">
-              <span class="name">Q&A</span>
+            <div class="popularity">
+              <i class="fa-regular fa-heart"></i>
+              <span class="number">90</span>
             </div>
           </div>
         </div>
-        <div class="body">
-          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
-        </div>
-        <div class="footer">
-          <div class="comments">
-            <i class="fa-regular fa-comment-dots"></i>
-            <span class="number">90</span>
+        <div class="discussion">
+          <div class="header">
+            <h1>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
+            <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
           </div>
-          <div class="popularity">
-            <i class="fa-regular fa-heart"></i>
-            <span class="number">90</span>
+          <div class="info">
+            <div class="user-info">
+              <!-- <img src="" alt=""> -->
+              <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
+              <div class="details">
+                <p class="name">Satanshu Mishra</p>
+                <p class="date">15h ago</p>
+              </div>
+            </div>
+            <div class="topics">
+              <div class="pill space">
+                <span class="name">Space</span>
+              </div>
+              <div class="pill qna">
+                <span class="name">Q&A</span>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
+          </div>
+          <div class="footer">
+            <div class="comments">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span class="number">90</span>
+            </div>
+            <div class="popularity">
+              <i class="fa-regular fa-heart"></i>
+              <span class="number">90</span>
+            </div>
+          </div>
+        </div>
+        <div class="discussion">
+          <div class="header">
+            <h1>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
+            <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
+          </div>
+          <div class="info">
+            <div class="user-info">
+              <!-- <img src="" alt=""> -->
+              <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
+              <div class="details">
+                <p class="name">Satanshu Mishra</p>
+                <p class="date">15h ago</p>
+              </div>
+            </div>
+            <div class="topics">
+              <div class="pill space">
+                <span class="name">Space</span>
+              </div>
+              <div class="pill qna">
+                <span class="name">Q&A</span>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
+          </div>
+          <div class="footer">
+            <div class="comments">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span class="number">90</span>
+            </div>
+            <div class="popularity">
+              <i class="fa-regular fa-heart"></i>
+              <span class="number">90</span>
+            </div>
+          </div>
+        </div>
+        <div class="discussion">
+          <div class="header">
+            <h1>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
+            <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
+          </div>
+          <div class="info">
+            <div class="user-info">
+              <!-- <img src="" alt=""> -->
+              <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
+              <div class="details">
+                <p class="name">Satanshu Mishra</p>
+                <p class="date">15h ago</p>
+              </div>
+            </div>
+            <div class="topics">
+              <div class="pill space">
+                <span class="name">Space</span>
+              </div>
+              <div class="pill qna">
+                <span class="name">Q&A</span>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
+          </div>
+          <div class="footer">
+            <div class="comments">
+              <i class="fa-regular fa-comment-dots"></i>
+              <span class="number">90</span>
+            </div>
+            <div class="popularity">
+              <i class="fa-regular fa-heart"></i>
+              <span class="number">90</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="discussion">
-        <div class="header">
-          <h1>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</h1>
-          <button class="more-options"><i class="fa-solid fa-ellipsis"></i></button>
-        </div>
-        <div class="info">
-          <div class="user-info">
-            <!-- <img src="" alt=""> -->
-            <span style="font-size: 50px;"><i class="fa-regular fa-circle-user"></i></span>
-            <div class="details">
-              <p class="name">Satanshu Mishra</p>
-              <p class="date">15h ago</p>
-            </div>
-          </div>
-          <div class="topics">
-            <div class="pill space">
-              <span class="name">Space</span>
-            </div>
-            <div class="pill qna">
-              <span class="name">Q&A</span>
-            </div>
-          </div>
-        </div>
-        <div class="body">
-          <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tellus et purus accumsan fringilla nec ac nunc. Vivamus ac nibh nec erat sagittis bibendum eget vitae ipsum. Proin rhoncus pharetra orci, a luctus nisi pulvinar a. Nam ut risus eget mi egestas aliquet. Donec blandit tellus a purus euismod mattis ut interdum leo. In id ipsum sed elit volutpat maximus. Integer nunc nulla, aliquam ut elit at, sollicitudin egestas turpis. Nulla a magna varius, mattis nibh et, suscipit arcu.</p>
-        </div>
-        <div class="footer">
-          <div class="comments">
-            <i class="fa-regular fa-comment-dots"></i>
-            <span class="number">90</span>
-          </div>
-          <div class="popularity">
-            <i class="fa-regular fa-heart"></i>
-            <span class="number">90</span>
-          </div>
-        </div>
+    </div>
+    <div class="statistics">
+      <div class="top-contributors">
+        <h1>Top Contributors</h1>
+        <span>Start or contribute to existing discussions.</span>
+        <ul class="list">
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Satanshu Mishra</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Corrine Fairchild</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Alice Smith</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Camron Brigham</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Lilly Page</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Sam Williams</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Satanshu Mishra</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Corrine Fairchild</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Alice Smith</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Camron Brigham</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Lilly Page</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Sam Williams</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <i class="fa-regular fa-circle-user"></i>
+            <a href="#"><span class="name">Sam Williams</span></a>
+            &nbsp;
+            <i class="fa-solid fa-star"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+        </ul>
+      </div>
+      <div class="top-discussions">
+        <h1>Top Discussions</h1>
+        <span>Most active discussions this week.</span>
+        <ul class="list">
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+          <li>
+            <a href="#"><span class="title">Lorem ipsum dolor sit...</span></a>
+            &nbsp;
+            <i class="fa-solid fa-fire"></i>
+            &nbsp;
+            <span class="score">53</span>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

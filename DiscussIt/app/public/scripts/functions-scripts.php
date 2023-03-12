@@ -1,9 +1,9 @@
 <?php 
 // CHECK IF VALID USERNAME
 function invalidUsername($username) {
-  $result = false;
+  $result = true;
   if(preg_match("/^[a-zA-Z0-9]*$/", $username)){
-    $result = true;
+    $result = false;
   }
   return $result;
 }
@@ -59,8 +59,9 @@ function createUser($conn, $firstName, $lastName, $uname, $pwd){
   // CLOSE STATEMENT
   mysqli_stmt_close($stmt);
   
-  header("location: ../index.php?error=none");
-  exit();
+  // header("location: ../index.php?error=none");
+  loginUser($conn, $uname, $pwd);
+  // exit();
 }
 
 function loginUser($conn, $uname, $pwd){

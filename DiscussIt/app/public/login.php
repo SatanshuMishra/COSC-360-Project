@@ -19,7 +19,7 @@
   <script src="https://kit.fontawesome.com/ec7e0e3eb8.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.js"
 integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
-  <script src="js/login.js"></script>
+  <script src="js/showPassword.js"></script>
   <title>Login In</title>
 </head>
 <body>
@@ -37,8 +37,11 @@ integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="ano
         <input type="text" name="username" id="username" required oninvalid="this.setCustomValidity('Please enter a username.')"
        oninput="setCustomValidity('')"><br>
         <label id="passLabel" for="password">Password</label><br>
-        <input type="text" name="password" id="password" required oninvalid="this.setCustomValidity('Please enter your password.')"
-       oninput="setCustomValidity('')">
+        <div class="passwordCont">
+          <input type="password" name="password" id="password" required oninvalid="this.setCustomValidity('Please enter your password.')"
+        oninput="setCustomValidity('')"><br>
+          <i id="showPasswordIcon" class="fa-regular fa-eye"></i>
+        </div>
         <div class="buttons-container">
           <div class="sign-up-btn-div">
             <label id="signupLabel">Don't have an account? Sign Up.</label>
